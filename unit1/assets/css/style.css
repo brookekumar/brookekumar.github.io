@@ -1,13 +1,25 @@
-.header{
+.body{
+   
+}
+
+
+header{
+    overflow: hidden;
+    background-color:#c0e7e586;
+    border-bottom: 3px solid #cccccc;
 
 }
 
-.clickhere{
-    display:block;
-    width:100%;
-    text-align:right;
-    background: #666666
-    
+h1{
+    background-color: #4aaaa5;
+    color: white;
+    float: left;
+}
+
+p{
+    float: right;
+    padding: 20px;
+    margin-right: 50px;
 }
 
 .footer{
@@ -20,6 +32,11 @@
 
 .contact1{
 
+}
+
+#body{
+    background-image:url(../images/background.png);    
+   
 }
 
 #aboutme{
