@@ -1,15 +1,16 @@
-header{
+.header{
     overflow: hidden;
     background-color: #ffffff;
     border-bottom: 3px solid #cccccc;
     color: #4aaaa5;
-    margin: 0;  
+    margin: 0 auto;  
     right:0;
     left:0;
     top:0;
-    width:100%;
+    padding:0;
     height:auto;
-    position: absolute;
+    margin-bottom: 50px;
+    width:100%;
 }
 
 h1{
@@ -25,14 +26,20 @@ h1{
 
 h2{
     color: #4aaaa5;
-    padding:0;
-    margin-top:40px;
-     font-family: 'Georgia', Times, 'Times New Roman', serif;
     border-bottom:3px solid #cccccc;
+    background-color:white;
+    margin-top:0;
+    padding: 15px;
 }
 
 a{ 
     color: #777777;
+}
+body{
+    background-image:url(../images/background.png);
+    background-color:#ffffff;
+    text-align:left;
+    background-color: #ffffff;
 }
 .links{
     float: right;
@@ -48,7 +55,7 @@ a{
     font-family:  'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 12px;
     height: auto;
-    position: absolute;
+    position:fixed;
     bottom: 0;
     width: 100%;
     border-top: 8px solid #4aaaa5;
@@ -60,46 +67,25 @@ a{
 
 #fronttext{
     font-size: 15px;
-    font-family;
     background-color:#ffffff;
     margin:auto;
-    margin-top: 120px;
-}
-
-.content{
-
-}
-
-
-body{
-    background-image:url(../images/background.png);
-    background-color:#ffffff;
-    text-align:left;
-    float: left; 
-    max-width:960px;
-    margin:20px 20px 20px 20px;
-    padding:10px;
-    background-color: #ffffff;
+    border:1px solid lightgray;
+    padding:5px;
+    width:960px;
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-#aboutme{
-    color: #4aaaa5;
-    padding:0;
-    margin-top:40px;
-     font-family: 'Georgia', Times, 'Times New Roman', serif;
-    border-bottom:3px solid #cccccc;
-}
-
 #frontpageimage{
-  padding: 12px;
+  padding: 20px;
+  padding-top:0;
   height: 200px;
-  
   float:left;
 }
 
 form{
     background-color: white;
+    margin-top:0;
+    padding:15px;
 }
 
 .button{ 
@@ -115,51 +101,130 @@ form{
     cursor: pointer;
 }
 
-.contact{
-    margin:auto;
-    max-width:960px;
+#contact{
+    margin:0 auto;
+    width:960px;
     font-size: 15px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     margin-top: 0;
     background-color: white;
-}
-
-#indextext{
-   
-}
-
-#closearchie{
+    text-align:left;
+    border:1px solid lightgray;
+    padding:5px;
 
 }
 
-#archietext{
-
+.portfolioeverything{
+    margin:0 auto;
+    width:960px;
+    font-size: 15px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-top: 0;
+    background-color: white;
+    text-align:left;
+    border:1px solid lightgray;
 }
 
-#icecream{
-
+.portfolio{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-top: 0;
+    background-color: white;
+    text-align:left;
 }
 
-#creamtext{
-
+.images{
+    float:left;
+    background-color: white;
+    margin-bottom: 100px;
+    border:1px solid lightgray;
 }
 
-#dogonly{
-
+#image1{
+    position:relative; 
 }
 
-#dogtext{
-
+#image1text{
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+    padding-top: 12px;
+    padding-bottom:12px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-#google{ 
-
+#image2{
+    position:relative; 
 }
 
-#googletext{ 
-
+#image2text{
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+    padding-top: 12px;
+    padding-bottom:12px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-#run{ 
+#image3{
+    position:relative; 
+}
 
+#image3text{
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+    padding-top: 12px;
+    padding-bottom:12px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#image4{ 
+    position:relative; 
+}
+
+#image4text{ 
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+    padding-top: 12px;
+    padding-bottom:12px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#image5{ 
+    position:relative; 
+}
+
+#image5text{
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+    padding-top: 12px;
+    padding-bottom:12px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.float{
+    float: left;
+    padding:15px;
 }
