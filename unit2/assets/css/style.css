@@ -84,7 +84,7 @@ body{
   float:left;
 }
 
-form{
+.form{
     background-color: #ffffff;
     margin-top:0;
     padding:15px;
@@ -134,12 +134,12 @@ form{
     text-align:left;
 }
 
-.images{
+/*.images{
     float:left;
     background-color:  #ffffff;
     margin-bottom: 100px;
     border:1px solid #dddddd;
-}
+} */
 
 #image1{
     position:relative; 
@@ -230,3 +230,6 @@ form{
     float: left;
     padding:15px;
 }
+
+/*media queries/*
+
