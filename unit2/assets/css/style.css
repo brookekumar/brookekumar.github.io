@@ -237,10 +237,8 @@ body{
     float:left;
     margin:auto 0;
   }
-  .header{
-      width:100%;
-  }
 }
+ 
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -249,3 +247,9 @@ body{
     }
   }
 
+  @media only screen and (max-width: 980px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
