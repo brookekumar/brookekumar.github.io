@@ -50,6 +50,7 @@ body{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+
 .footer{
     background-color:#666666;
     font-family:  'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -122,6 +123,7 @@ body{
     font-size: 15px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     margin-top: 0;
+    margin-bottom:150px;
     background-color: #ffffff;
     text-align:left;
     border:1px solid #dddddd;
@@ -134,12 +136,7 @@ body{
     text-align:left;
 }
 
-/*.images{
-    float:left;
-    background-color:  #ffffff;
-    margin-bottom: 100px;
-    border:1px solid #dddddd;
-} */
+
 
 #image1{
     position:relative; 
@@ -231,5 +228,24 @@ body{
     padding:15px;
 }
 
-/*media queries/*
+/*media queries and bootstrap*/
+
+@media only screen and (max-width: 640px) {
+  /* For small devices: */
+  #fronttext {
+    width: 40%; 
+    float:left;
+    margin:auto 0;
+  }
+  .header{
+      width:100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 60%;
+    }
+  }
 
