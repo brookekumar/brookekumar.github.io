@@ -1,0 +1,36 @@
+body{
+    background-color: #F9FBFD;
+    font-family: 'Be Vietnam', sans-serif;
+    text-align:center;
+}
+
+h1{ 
+    padding: 45px;
+    font-size: 45px;
+}
+
+.passwordbox{
+    background-color: white;
+    width: 0 auto;
+    margin:45px;
+}
+
+.generate{ 
+    border-bottom: 4px solid lightgray;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.secure{ 
+    padding:20px;
+    border-style: dashed;
+    border:4px solid lightblue;
+}
+
+.button1{
+    float: left;
+}
+
+.button2{ 
+
+}
