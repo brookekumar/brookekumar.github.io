@@ -43,14 +43,14 @@ generatePass.addEventListener("click", function () {
         if (passwordNumber === true) {
             passwordCharSet = passwordCharSet.concat(numbers);
         }
-        for (var i = 0; i < passwordCount.length; i++) { 
-            userPassword = passwordCount[Math.floor(Math.random() * passwordCharSet.length + 1)];
+        for (var i = 0; i < passwordCount; i++) { 
+            userPassword[i] = passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)];
         }
     }
     
     console.log(passwordCharSet);
     console.log(userPassword);
-    document.getElementById("secure").innerHTML = userPassword;
+    document.getElementById("secure").innerHTML = userPassword.join("");
 });
 
   
