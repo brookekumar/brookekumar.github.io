@@ -14,8 +14,6 @@ This assignment is for homework purposes only. Confidential, for interal use onl
 
 **Password is displayed on the center of the screen
 
-**User can copy and paste new password to clipboard
-
     **Password can only be between 8 & 120 characters 
 
     **User indicates if they want
