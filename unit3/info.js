@@ -12,12 +12,20 @@ var passwordCharSet = [];
 // var numbers = '0123456789';
 // var symbols = '!@#$%^&*=-_';
 
+var clearPassword = function(){
+  //  alert("you hit me  owwww")
+  document.getElementById("secure").innerHTML="Yourure omg";
+  
+}
 
 generatePass.addEventListener("click", function () {
+    
+    // var copy = ("Your password is going to be so secure omg");
+    
     var userPassword = [];
 
     var passwordCount = prompt("How many characters would you like your password to contain?");
-    if (passwordCount < 120 && passwordCount > 8) {
+    if (passwordCount <= 120 && passwordCount >= 8) {
     }
     else {
         alert("You can only use between 8 and 120 characters, click OK to start again.")
@@ -47,10 +55,15 @@ generatePass.addEventListener("click", function () {
             userPassword[i] = passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)];
         }
     }
-    
+    console.log("belowi s the password char set")
     console.log(passwordCharSet);
+    console.log("below is hte user password")
     console.log(userPassword);
     document.getElementById("secure").innerHTML = userPassword.join("");
+    // userPassword=[];
+    myVar = setInterval(clearPassword,2000)
+    clearInterval(myVar)
+
 });
 
   
