@@ -4,7 +4,7 @@ $(document).ready(function () {
     var correctAnswers = 0;
     var incorrectAnswers = 0;
     var unansweredQuestions = 0;
-    var timeRemaining = 3;
+    var timeRemaining = 5;
     var intervalID;
     var indexQandA = 0; //index to load a different question each round without the game reset or screen refresh
     var answered = false; //variable to stop the timer if user has clicked an answer
@@ -45,6 +45,7 @@ $(document).ready(function () {
     function startGame() {
         console.log("game has begun");
         $('.start-button').remove();
+        $('.instructions').remove();
         correctAnswers = 0;
         incorrectAnswers = 0;
         unansweredQuestions = 0;
@@ -64,6 +65,7 @@ $(document).ready(function () {
         for (var i = 0; i < 4; i++) {
             var answer = triviaGame[indexQandA].answer[i];
             $('.answers').append('<h4 class= answersAll id=' + i + '>' + answer + '</h4>');
+        
         }
        
 

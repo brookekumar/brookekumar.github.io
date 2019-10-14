@@ -47,7 +47,7 @@
   body {
     padding: 0px;
     margin: 0px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Open Sans', sans-serif;
     background-image: url("pink_rice.png");
   }
   
@@ -65,6 +65,11 @@
     margin-top: 80px;
   }
   
+  .instructions{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
   p {
     text-align: center;
   }
@@ -72,7 +77,7 @@
   /*question*/
   h3
   {
-    font-family: 'Pacifico', cursive; 
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 3px;
     word-spacing: 4px;
     margin-top: 45px;
@@ -104,7 +109,7 @@
     font-size: 20px;
     letter-spacing: 2px;
     margin-top: 40px;
-    font-family:'Pacifico', cursive;
+    font-family: 'Open Sans', sans-serif;
   }
   
   .answerImage {
