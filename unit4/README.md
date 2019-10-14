@@ -5,8 +5,6 @@ This assignment is for homework purposes only. Confidential, for interal use onl
 ]
 
 
-# [UNIT 03 - TRIVIA GAME ] 
-
 
 ** Quiz instructions:
  
