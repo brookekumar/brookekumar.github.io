@@ -1,0 +1,50 @@
+.container{
+    width: 0 auto;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.header{
+    width: 0 auto;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.subHeader{
+    font-family: 'Poiret One', cursive;
+}
+
+#todayDate{
+    font-family: 'Poiret One', cursive;
+}
+
+.time{ 
+    height: 60px;
+    border-right: 3px solid darkgrey;
+}
+  
+.plannerText{
+    height: 60px;
+    border-bottom: 2px solid darkgray;
+}
+
+.save{ 
+    height: 60px;
+    border-left: 3px solid darkgrey;
+}
+
+.past {
+    background-color: #d3d3d3;
+    color: white;
+  }
+  
+.present {
+    background-color: #ff6961;
+    color: white;
+}
+
+.future {
+    background-color: #77dd77;
+    color: white;
+}
+
