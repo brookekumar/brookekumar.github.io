@@ -1,0 +1,21 @@
+h1{
+    background-color: rgb(224, 174, 224);
+    color:white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px;
+}
+
+.btn{
+    background-color: lightskyblue;
+    font-family: 'Radley', serif;
+}
+
+h2{
+    font-family: 'Radley', serif;
+    font-size: 20px;
+}
+
+#leftside{
+    background-color: lightgray;
+}
