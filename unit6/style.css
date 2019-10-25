@@ -1,9 +1,24 @@
+header{
+    background-color: rgb(105, 145, 230);
+    padding: 30px;
+    border-bottom: 3px solid darkgray;
+}
+
 h1{
-    background-color: rgb(224, 174, 224);
-    color:white;
+    color: white;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
-    padding: 15px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 70px;
+}
+
+h3{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 25px;
+    padding: 0;
+}
+
+.container-fluid{
+    font-family: 'Questrial', sans-serif;
 }
 
 .btn{

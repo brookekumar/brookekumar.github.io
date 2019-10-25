@@ -10,59 +10,51 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Radley|Raleway|Rufina&display=swap" rel="stylesheet">
-    <!-- font-family: 'Rufina', serif;
-    font-family: 'Radley', serif;
-    font-family: 'Raleway', sans-serif; -->
-</head>
-<body>
-  <header>
-    <h1>Weather Dashboard</h1>
-  </header>      
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Questrial|Slabo+27px&display=swap" rel="stylesheet">
+    <!-- font-family: 'Slabo 27px', serif;
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Archivo Narrow', sans-serif; -->
+</head>  
   
-<div class = "container">
-
-  <!-- Row 1 -->
-  <div class = "row">
-    <div class = "col-md-4">
-        <h2>Search for a City:</h2>
-              <div class="input-group">
-                  <input type="text" id="citySearch">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" id="submit">Search</button>
-                  </span>
-              </div>
-              <div class = "row">
-                <div class = "col-md-12">
-                    <div class="list-group">
-                        
-                      </div>
-                </div>
-              </div>
+  <body>
+      <header class="container-fluid text-center text-white p-2">
+        <h1>Weather Dashboard</h1>
+        <h3>"The best weather dashboard I have ever seen" - Bill Gates</h3>
+        <h3>"Astounding - Brooke's work is incredible" - Warren Buffett</h3>
+      </header>
+    ​
+      <div class="container-fluid">
+        <div class="row">
+          <aside class="col-lg-3 bg-light">
+            <h5 class="mt-1">Search for a City:</h5>
+            <div class="form-inline form-group">
+              <input class="form-control" type="text" id="citySearch"/>
+              <button class="btn btn-primary" id="search-button"> <i class="fa fa-search"></i> </button>
+            </div>
+            <!-- <div class="input-group">
+                <input class="form-control"
+                       placeholder="I can help you to find anything you want!">
+                <div class="input-group-addon" ><i class="fa fa-search"></i></div>
+              </div> -->
+            <ul class="list-group history"></ul>
+          </aside>
+    ​
+          <div class="col-lg-9">
+            <div id="today" class="mt-3"></div>
+            <div id="forecast" class="mt-3"></div>
+          </div>
         </div>
-      <div class ="col-md-8">
-            <div class="jumbotron">
-             
-            </div>
-            <div class = "row">
-                <div class = "col-md-12">
-                  <h3>5-Day Forecast:</h3>
-                      
-                  
-                </div>
-            </div>
       </div>
-  
-
-
-
-
-
-<!-- last div -->
-</div>
-
-<!-- jQuery and JS script  -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>      
-<script src="script.js"></script>       
-</body>
-</html>
+    ​
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+    ​
+    </html>
+   
+    
+    
+    
+    
