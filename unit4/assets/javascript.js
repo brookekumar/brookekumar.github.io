@@ -67,19 +67,24 @@ $(document).ready(function () {
             $('.answers').append('<h4 class= answersAll id=' + i + '>' + answer + '</h4>');
         
         }
-       
 
         $("h4").click(function () {
             var id = $(this).attr('id');
             if (id === correct) {
                 answered = true; // stops the timer
-                $('.question').text("the answer is: " + triviaGame[indexQandA].answer[correct]);
-                // correctAnswer();
+                $('.question').html("the answer is: " + triviaGame[indexQandA].answer[correct]);
+                correctAnswer();
+                $('.question').remove();
             } else {
                 answered = true; //stops the timer
-                $('.question').text("you picked: " + triviaGame[indexQandA].answer[id] + " BUT you should have picked: " + triviaGame[indexQandA].answer[correct]);
+                $('.question').html("you picked: " + triviaGame[indexQandA].answer[id] + " BUT you should have picked: " + triviaGame[indexQandA].answer[correct]);
                 incorrectAnswer();
+                setTimeout( "$('.question').hide();", 2000);
             }
+
+            // function clear(){
+            //     $('.question').text("");
+            // }
            
         });
     }
@@ -88,19 +93,19 @@ $(document).ready(function () {
         if (timeRemaining === 0) {
             answered = true;
             clearInterval(intervalID);
-            $('.question').text("the correct answer is: " + triviaGame[indexQandA].answer[correct]);
+            $('.question').html("the correct answer is: " + triviaGame[indexQandA].answer[correct]);
             unAnswered();
         } else if (answered === true) {
             clearInterval(intervalID);
         } else {
             timeRemaining--;
-            $('.timeRemaining').text('you only have ' + timeRemaining + ' seconds to pick!');
+            $('.timeRemaining').html('you only have ' + timeRemaining + ' seconds to pick!');
         }
     }
 
     function correctAnswer() {
         correctAnswers++;
-        $('.timeRemaining').text("you are right!").css({
+        $('.timeRemaining').html("you are right!").css({
             'color': '#3D414F'
         });
         resetRound();
@@ -108,16 +113,15 @@ $(document).ready(function () {
 
     function incorrectAnswer() {
         incorrectAnswers++;
-        $('.timeRemaining').text("you are wrong!").css({
+        $('.timeRemaining').html("you are wrong!").css({
             'color': '#3D414F'
         });
         resetRound();
-
     }
 
     function unAnswered() {
         unansweredQuestions++;
-        $('.timeRemaining').text("you didnt pick an answer?!").css({
+        $('.timeRemaining').html("you didnt pick an answer?!").css({
             'color': '#3D414F'
         });
         resetRound();
@@ -129,7 +133,7 @@ $(document).ready(function () {
         if (indexQandA < triviaGame.length) {
             setTimeout(function () {
                 loadQandA();
-            }, 5000); // removes answer image from previous round
+            }, 5000); 
         } else {
             setTimeout(function () {
                 $('.question').remove();
