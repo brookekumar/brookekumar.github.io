@@ -15,14 +15,14 @@ Included:
 
 ###Index page
 
-![Full-size index page][frontpage/images/index_full.png]
+![Full-size index page][images/index_full.png]
 
-![Responsive index page][frontpage/images/index_responsive.png]
+![Responsive index page][images/index_responsive.png]
 
 ###Contact page
 
-![Full-size contact page][frontpage/images/contact_full.png]
+![Full-size contact page][images/contact_full.png]
 
-![Responsive contact page][frontpage/images/contact_responsive.png]
+![Responsive contact page][images/contact_responsive.png]
 
 *Contact page does not link to email*
