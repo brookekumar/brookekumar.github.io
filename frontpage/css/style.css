@@ -39,6 +39,13 @@ body{
     text-align: center;
 }
 
+#frontpageimage{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
+
 footer{
     background-color:darkgray;
     font-family: 'Poiret One', cursive;
