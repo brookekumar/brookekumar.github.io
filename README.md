@@ -2,10 +2,10 @@
 
 Brooke Kumar github bio - 
 
-# Email 
-# Phone 
-# LinkedIn
-# Repos
+## Email 
+## Phone 
+## LinkedIn
+## Repos
 
 https://brookekumar.github.io/
 
