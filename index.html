@@ -1,51 +1,111 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Brooke Kumar Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="frontpage/css/style.css">
+    <script src="https://kit.fontawesome.com/2ff09436a7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- font-family: 'Nanum Myeongjo', serif; [body]
+    font-family: 'Poiret One', cursive; [other] -->
+    <title>Brooke Kumar</title>
 </head>
-
-<div class="header">
-    <header>
-        <h1 style="font-size:60px;font-family: 'Georgia', Times, 'Times New Roman', serif;">
-            Brooke Kumar
-        </h1>
-    </header>
-</div>
-
-<nav class="click here">
-    <h2 style="font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;">
-            About | Portfolio | Contact
-    </h2>
-</nav>
 <body>
 
-<div id="aboutme">
-    <h2 style="font-family: 'Georgia', Times, 'Times New Roman', serif;"> 
-        About me
-    </h2>
+<!-- NAV BAR -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <dißv class=header>
+        <a class="navbar-brand" href="#">Brooke Kumar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+        <div class=links>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">
+                                <i class="about"></i> About
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">
+                                <i class="portfolio"></i>Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <i class="contact"></i>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</nav>
 
-    <img id="frontpageimage"
-    src="../assignments/unit1/assets/images/brookekumar.jpg"
-    alt="Brooke and Grisha Kumar"
-    />
+<!-- CONTAINER -->
+   <div class="container">
 
-    <section id="indextext">
-        <p style="font-size: 15px; font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;"> 
-            Brooke Kumar<br>
-        </p>
-    </section>
+
+      <div id="fronttext">
+<!-- ROW 1 -->
+          <!-- <div class="row">
+              <div class="col-lg-12">
+                          <h2>About Me</h2>
+              </div>          
+          </div>     -->
+
+<!-- ROW 2 -->
+          <div class="row">
+              <div class="col-sm-12">
+                  <img id="frontpageimage"
+                  src="frontpage/images/brookekumar.jpg"
+                  alt="Brooke Kumar"/>
+              </div>
+
+              <!-- <div class="col-lg-9">
+                  <p>
+                      My name is Brooke Kumar and I am currently a Program Analyst at Medtronic in the CVG division for the RPE function. I am on the CRHF/ARS EU MDR Core Team where I provide tool innovation and Program Management insights/fundamentals to our Core Team from planning to close.
+                      <br><br>It is my passion to seek out new tools and functions that can enhance my Core Team's work as well as improving the ease of work at Medtronic as a whole. In the past, my drive for success has improved the ease of work on the Organization level.
+                      <br><br>While my career asiprations are evolving, I will continue to grow my PM skills and empowering others to complete projects from initation to execution and closing.
+                      <br><br>I look forward to incoporating my skills in HTML, CSS, JS, and now Bootstrap in my future work. As you will find in my portfolio, I have a breadth of knowledge and skills to offer.<br>
+                  </p>
+              </div> -->
+          </div>        
+      
+<!-- ROW 3 -->
+        <div id="media">
+          <div class="row">
+              <div class="col-sm-12">
+                  <span style = "font-size: 48px">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                  <span style = "font-size: 48px">
+                    <i class="fab fa-git-square"></i>
+                  </span>
+                  <span style = "font-size: 48px">
+                    <i class="fab fa-angellist"></i>
+                  </span>
+              </div>
+            </div>
+          </div>
+
+<!-- FRONTTEXT DIV -->
     </div>
 
-<section id="footer">
-<footer style="font-size: 12px; font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;">
-    <p>
-        Intellecual property of Brooke Kumar. 
-    </p>
-</footer>
-</section>  
+<!-- END OF CONTAINER DIV -->
+</div>
 
+
+        <footer>
+            <p>
+                Intellecual property of Brooke Kumar. 
+            </p>
+        </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
