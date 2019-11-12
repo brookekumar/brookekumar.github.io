@@ -1,9 +1,42 @@
-<!DOCTYPE html>
+// const colors = {
+//   green: {
+//     wrapperBackground: "#E6E1C3",
+//     headerBackground: "#C1C72C",
+//     headerColor: "black",
+//     photoBorderColor: "#black"
+//   },
+//   blue: {
+//     wrapperBackground: "#5F64D3",
+//     headerBackground: "#26175A",
+//     headerColor: "white",
+//     photoBorderColor: "#73448C"
+//   },
+//   pink: {
+//     wrapperBackground: "#879CDF",
+//     headerBackground: "#FF8374",
+//     headerColor: "white",
+//     photoBorderColor: "#FEE24C"
+//   },
+//   red: {
+//     wrapperBackground: "#DE9967",
+//     headerBackground: "#870603",
+//     headerColor: "white",
+//     photoBorderColor: "white"
+//   }
+// };
+
+//EX ${colors[data.color].wrapperbackground}
+
+function generateHTML(data) {
+    return `
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+
     
     <style>
             #topCard{
@@ -96,22 +129,28 @@
 <body>
 
 <div id="topCard">
-        <img id="frontpageimage" src="../frontpage/images/brookekumar.jpg"/>
+        <img id="frontpageimage" src="${data.avatar_url}"/>
         <div id="topCardText">
         <h1 class="display-4">Hello!</h1>
-        <h2>My name is </h2>
-        <div id=contact>
-            <p>I am from </p> 
-            <p class="github" href="">GitHub</a>
-            <p class="contact" href="">Conact</a>
-        </div>
+        <h2>My name is ${data.name}</h2>
+        <h2>${data.company ? `Currently at ${data.company}` : " "}</h2>
+
+        <nav id=contact>
+          ${data.location ? `<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/${
+            data.location
+          }"><i class="fas fa-location-arrow"></i> ${
+            data.location
+          }</a>`: " "}
+            <a class="github" href="${data.html_url}"> <i class="fab fa-github-alt"</i> GitHub</a>
+            <a class="contact" href="">Contact</a>
+        </nav>
         </div>
 </div>
 
 
  <!-- git hub bio  -->
  <div id="bio">
-    <h3></h3>
+    <h3>${data.bio ? `${data.bio}` : " "} </h3>
 </div>
 
     <div class="infoCards">
@@ -119,7 +158,7 @@
             <div class="float">
                 <div id="publicRepo">
                     <h4>Public Repositories</h4>
-                    <p></p>
+                    <p>${data.public_repos}</p>
                 </div>
             </div>
                                 
@@ -127,21 +166,21 @@
             <div class="float">
                 <div id="followers">
                     <h4>Followers</h4>
-                    <p></p>
+                    <p>${data.followers}</p>
                 </div>           
             </div>
             <!-- stars -->
             <div class="float">
                 <div id="stars">
                 <h4>GitHub Stars</h4>
-                <p></p>
+                <p>${data.stars}</p>
                 </div>
             </div>
             <!-- following -->
             <div class="float">
                 <div id="following">
                 <h4>Following</h4>
-                <p></p>
+                <p>${data.following}</p>
                 </div>
             </div>
 
@@ -149,4 +188,7 @@
                     
 </body>
 
-</html>
+</html>`;
+  }
+
+module.exports = generateHTML;
