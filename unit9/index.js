@@ -2,7 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
 const open = require("open");
-const convertFactory = require("electron-html-to");
+const util = require("util");
+const pdf = require('html-pdf');
 const api = require("./api");
 const generateHTML = require("./generateHTML");
 
@@ -23,6 +24,8 @@ const prompt = [
 
 ];
 
+const writeFile = util.promisify(fs.writeFile);
+
 function writetoFile(data, fileName) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
@@ -35,25 +38,25 @@ function init() {
                 .then(response =>
                     api.getStars(github)
                         .then(stars => {
+                            console.log(github)
+                            console.log(response)
                             return generateHTML({
-                                stars, color, ...response.data
+                                stars, color, response
                             })
                         }
                         ))
-                .then(html => {
-                    const conversion = convertFactory({
-                        converterPath: convertFactory.converters.PDF
-                    })
-                    conversion({ html }, function (err, result) {
-                        if (err) {
-                            return console.error(err)
-                        }
-                        result.stream.pipe(
-                            fs.createWriteStream(path.join(__dirname, "git.pdf"))
-                        )
-                        conversion.kill();
-                    })
-                    open(path.join(process.cwd(), "git.pdf"))
+                .then(async function (html) {
+
+                    await writeFile("index.html", html);
+
+                    var readHtml = fs.readFileSync('index.html', 'utf8');
+                    var options = { format: 'Letter' };
+                     
+                    pdf.create(readHtml, options).toFile('test.pdf', function(err, res) {
+                      if (err) return console.log(err);
+                      console.log(res); 
+                    });
+            
                 })
                 .catch(function(error){
                     console.log(error)

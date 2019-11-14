@@ -8,9 +8,9 @@ const api = {
         .get(`https://api.github.com/users/${username}?client_id=${
             process.env.CLIENT_ID
           }&client_secret=${process.env.CLIENT_SECRET}`)
-          .then(response=>{
-              console.log(response)
+          .then(response => {
               return response.data
+              console.log('hi')
           })
           .catch(err=>{
               console.log(`user not found`, err);
@@ -22,7 +22,7 @@ const api = {
         .get(`https://api.github.com/users/${username}/repos?client_id=${
             process.env.CLIENT_ID
           }&client_secret=${process.env.CLIENT_SECRET}&per_page=100`)
-          .then(response=>{
+          .then(response => {
               return response.data.reduce((acc,curr)=>{
                   acc += curr.stargazers_count
                   return acc
