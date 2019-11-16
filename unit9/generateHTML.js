@@ -25,7 +25,6 @@ const colors = {
   }
 };
 
-//EX ${colors[data.color].wrapperbackground}
 
 function generateHTML(data) {
     console.log(data)
@@ -37,6 +36,7 @@ function generateHTML(data) {
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Josefin+Slab|Nanum+Myeongjo&display=swap" rel="stylesheet">
         <!-- font-family: 'Alegreya Sans', sans-serif;
         font-family: 'Nanum Myeongjo', serif;
@@ -53,6 +53,7 @@ function generateHTML(data) {
                 background-color: ${colors[data.color].headerBackground};
                 margin: auto;
                 color: ${colors[data.color].headerColor};
+                border:1px solid black;
                 }
     
                 img{
@@ -97,12 +98,9 @@ function generateHTML(data) {
                     justify-content: center;
                 }
 
-                .nav{
+                .col-md-4{
                     text-align: center;
-                }
-
-                .github{
-                    text-align: center;
+                    color: lightgray;
                 }
 
                 .blog{
@@ -112,6 +110,7 @@ function generateHTML(data) {
                 #bio{
                     background-color:lightgray;
                     color:black;
+                    border:1px solid black;
                 }
 
                 #contact{
@@ -124,6 +123,7 @@ function generateHTML(data) {
                     margin: auto 0;
                     text-align: center;
                     background:white;
+                    border: 1px solid black;
                 }
 
                 .left{
@@ -166,15 +166,15 @@ function generateHTML(data) {
     <div class = "links">
         <div class = "row">
             <div class = "col-md-4">    
-                <nav id="nav"">
+                <nav>
                 ${data.response.location ? `<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/
                 ${data.response.location}"><i class="fas fa-location-arrow"></i> ${data.response.location}</a>`: " "}</nav>
             </div>
             <div class = "col-md-4">  
-                <a class="github" href="${data.response.html_url}"> <i class="fab fa-github-alt"></i> GitHub</a>
+                <a class="github" style="text-align:center" href="${data.response.html_url}"> <i class="fab fa-github-alt"></i> GitHub</a>
             </div>
             <div class = "col-md-4">  
-                <a class="blog" href="${data.response.blog}">Blog</a>
+                <a class="blog" style="text-align:center" href="${data.response.blog}">Blog</a>
             </div>
         </div>
     </div>
