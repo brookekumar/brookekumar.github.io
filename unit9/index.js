@@ -52,7 +52,7 @@ function init() {
                     var readHtml = fs.readFileSync('index.html', 'utf8');
                     var options = { format: 'Letter' };
                      
-                    pdf.create(readHtml, options).toFile('test.pdf', function(err, res) {
+                    pdf.create(readHtml, options).toFile('gitprofile.pdf', function(err, res) {
                       if (err) return console.log(err);
                       console.log(res); 
                     });
