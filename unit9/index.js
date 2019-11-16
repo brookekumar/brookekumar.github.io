@@ -50,7 +50,11 @@ function init() {
                     await writeFile("index.html", html);
 
                     var readHtml = fs.readFileSync('index.html', 'utf8');
-                    var options = { format: 'Letter' };
+                    var options = { 
+                        format: 'Letter',
+                        width: '1000px',
+                        height: '900px'
+                        };
                      
                     pdf.create(readHtml, options).toFile('gitprofile.pdf', function(err, res) {
                       if (err) return console.log(err);

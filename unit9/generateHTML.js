@@ -1,28 +1,32 @@
 const colors = {
-  green: {
-    wrapperBackground: "#E6E1C3",
-    headerBackground: "#C1C72C",
-    headerColor: "black",
-    photoBorderColor: "black"
-  },
-  blue: {
-    wrapperBackground: "#5F64D3",
-    headerBackground: "#26175A",
-    headerColor: "black",
-    photoBorderColor: "#73448C"
-  },
-  pink: {
-    wrapperBackground: "#879CDF",
-    headerBackground: "#FF8374",
-    headerColor: "black",
-    photoBorderColor: "#FEE24C"
-  },
-  red: {
-    wrapperBackground: "#DE9967",
-    headerBackground: "#870603",
-    headerColor: "black",
-    photoBorderColor: "white"
-  }
+    green: {
+        wrapperBackground: "#E6E1C3",
+        headerBackground: "#C1C72C",
+        headerColor: "black",
+        photoBorderColor: "black",
+        links: "darkgreen"
+    },
+    blue: {
+        wrapperBackground: "#5F64D3",
+        headerBackground: "#26175A",
+        headerColor: "white",
+        photoBorderColor: "#73448C",
+        links: "white"
+    },
+    pink: {
+        wrapperBackground: "#879CDF",
+        headerBackground: "#FF8374",
+        headerColor: "white",
+        photoBorderColor: "#FEE24C",
+        links: "darkgray"
+    },
+    red: {
+        wrapperBackground: "#DE9967",
+        headerBackground: "#870603",
+        headerColor: "black",
+        photoBorderColor: "white",
+        links: "darkgray"
+    }
 };
 
 
@@ -94,11 +98,11 @@ function generateHTML(data) {
                     background-color:${colors[data.color].wrapperBackground};
                 }
                    
-                .links{
-                    justify-content: center;
+                a{
+                    color: ${colors[data.color].photoBorderColor};
                 }
 
-                .col-md-4{
+                .col-4{
                     text-align: center;
                     color: lightgray;
                 }
@@ -146,34 +150,34 @@ function generateHTML(data) {
 
     <div id="topCard">
         <div class = "row"> 
-            <div class = "col-md-12">
+            <div class = "col-12">
                 <h1>hi!</h1>
             </div>
         </div>
 
         <div class = "row"> 
-            <div class = "col-md-12">
+            <div class = "col-12">
                 <h2>My name is ${data.response.name}</h2>
             </div>
         </div>
 
         <div class = "row"> 
-            <div class = "col-md-12">
+            <div class = "col-12">
                 <h2>I work at ${data.response.company}</h2>
             </div>
         </div>
     
     <div class = "links">
         <div class = "row">
-            <div class = "col-md-4">    
+            <div class = "col-4">    
                 <nav>
                 ${data.response.location ? `<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/
-                ${data.response.location}"><i class="fas fa-location-arrow"></i> ${data.response.location}</a>`: " "}</nav>
+                ${data.response.location}"><i class="fas fa-location-arrow"></i> ${data.response.location}</a>` : " "}</nav>
             </div>
-            <div class = "col-md-4">  
+            <div class = "col-4">  
                 <a class="github" style="text-align:center" href="${data.response.html_url}"> <i class="fab fa-github-alt"></i> GitHub</a>
             </div>
-            <div class = "col-md-4">  
+            <div class = "col-4">  
                 <a class="blog" style="text-align:center" href="${data.response.blog}">Blog</a>
             </div>
         </div>
@@ -183,7 +187,7 @@ function generateHTML(data) {
      <!-- git hub bio  -->
     <div id="bio">
         <div class = "row"> 
-            <div class = "col-md-12">
+            <div class = "col-12">
                 <h3>${data.response.bio ? `${data.response.bio}` : " "} </h3>
             </div>
         </div>
@@ -192,16 +196,16 @@ function generateHTML(data) {
         <div class="infoCards">
                 
             <!-- pubic repo -->
-            <div class = "left">
+
             <div class = "row">
-                <div class = "col-md-6">
+                <div class = "col-6">
                     <div class = "row"> 
-                        <div class = "col-md-12">
+                        <div class = "col-12">
                             <h4>Public Repositories</h4>
                         </div>
                     </div>
                     <div class = "row"> 
-                        <div class = "col-md-12">
+                        <div class = "col-12">
                             <p>${data.response.public_repos}</p>
                         </div>
                     </div>
@@ -210,31 +214,31 @@ function generateHTML(data) {
                                     
                 <!--  followers -->
 
-                <div class = "col-md-6">
+                <div class = "col-6">
                     <div class = "row"> 
-                        <div class = "col-md-12">
+                        <div class = "col-12">
                             <h4>Followers</h4>
                         </div>
                     </div>
                     <div class = "row"> 
-                        <div class = "col-md-12">
+                        <div class = "col-12">
                             <p>${data.response.followers}</p>
                         </div>
                     </div>
                 </div>
             </div>         
-            </div>
+
                 <!-- stars -->
-            <div class = "right">
+
             <div class = "row">
-                    <div class = "col-md-6">
+                    <div class = "col-6">
                         <div class = "row"> 
-                            <div class = "col-md-12">
+                            <div class = "col-12">
                                 <h4>GitHub Stars</h4>
                             </div>
                         </div>
                         <div class = "row"> 
-                            <div class = "col-md-12">
+                            <div class = "col-12">
                                 <p> ${data.response.stars ? `${data.response.stars}` : "None"}</p>
                             </div>
                         </div>
@@ -243,20 +247,20 @@ function generateHTML(data) {
                                     
                  <!-- following -->
 
-                <div class = "col-md-6">
+                <div class = "col-6">
                     <div class = "row"> 
-                        <div class = "col-md-12">
+                        <div class = "col-12">
                             <h4>Following</h4>
                         </div>
                     </div>
                     <div class = "row"> 
-                        <div class = "col-md-12">
+                        <div class = "col-12">
                             <p>${data.response.following}</p>
                         </div>
                     </div>
                 </div>
             </div>     
-            </div>
+
 
 <!-- last div for infocard -->
         </div>

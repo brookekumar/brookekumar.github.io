@@ -1,6 +1,6 @@
- # https://brookekumar.github.io/unit9/
+## https://brookekumar.github.io/unit9/
 
-## Github Profile generator 
+# Github Profile generator 
 
 # highlights and basic functionality 
 
@@ -25,6 +25,5 @@
 
 # future development 
 
-1. Making the PDF content stay on one page and not stretch past the letter width 
-2. Expand color options
+1. Expand color options
 
