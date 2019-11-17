@@ -79,12 +79,121 @@ img{
     margin-bottom: 100px;
 }
 
+#contactheader{
+    font-family: 'Poiret One', cursive;
+    font-size:50px; 
+    margin-bottom:0;
+    border-bottom: 2px solid lightgrey !important;
+    padding: 15px;
+ }
+
 #submitButton{
     border-radius: 50px;
     background-color:rgb(180, 124, 180);
     border: 2px solid darkgray;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
+}
+
+.portfolioeverything{
+    margin:0 auto;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom:150px;
+    background-color: #ffffff;
+    text-align:left;
+    border:1px solid #dddddd;
+}
+
+.portfolio{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    background-color: white;
+    text-align:left;
+}
+
+#portfoliotitle{
+   font-family: 'Poiret One', cursive;
+   font-size:50px; 
+   margin-bottom:0;
+   border-bottom: 2px solid lightgrey;
+   padding: 15px;
+}
+
+.images{
+    padding: 15px;
+}
+
+#image1{
+    position:relative; 
+}
+
+#image1text{
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    background-color:rgb(212, 162, 212);
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+    padding-top: 12px;
+    padding-bottom:12px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#image2{
+    position:relative; 
+}
+
+#image2text{
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    background-color:rgb(212, 162, 212);
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+    padding-top: 12px;
+    padding-bottom:12px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#image3{
+    position:relative; 
+}
+
+#image3text{
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    background-color:rgb(212, 162, 212);
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+    padding-top: 12px;
+    padding-bottom:12px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#image4{ 
+    position:relative; 
+}
+
+#image4text{ 
+    position: absolute;
+    bottom: 50px;
+    width:100%;
+    background-color:rgb(212, 162, 212);
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+    padding-top: 12px;
+    padding-bottom:12px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.portfolioimg{
+    width: fit-content;
 }
 
 footer{

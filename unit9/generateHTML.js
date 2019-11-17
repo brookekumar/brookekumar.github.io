@@ -16,7 +16,7 @@ const colors = {
     pink: {
         wrapperBackground: "#879CDF",
         headerBackground: "#FF8374",
-        headerColor: "white",
+        headerColor: "black",
         photoBorderColor: "#FEE24C",
         links: "darkgray"
     },
