@@ -15,17 +15,20 @@
 
       <div class="container">
 
-        <!-- <div class="row">
+        <div class="row">
             <div class="col-sm-6">
-              <div id=
-            </div> -->
+                <div id = "time"></div>
+            <div class="col-sm-6">
+              <div id = "highscores"></div>
+            </div>
 
         </div>
 
         <section class="row">
           <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="jumbotron animated zoomIn">
-                <h1>Unicorn Quiz</h1>
+                <div id = "start-screen">
+              <h1>Unicorn Quiz</h1>
                 <p>Difficulty: High</p>
                 <div class="instructions">
                   <ul style="list-style-type:none";>
@@ -35,14 +38,21 @@
                       <li>Try again and try to beat your high score, or play with a friend</li>
                       <li>Have fun!</li>
                   </ul>
+                  </div>
                 </div>
-              <h5 class="timeRemaining"></h5>
-              <h3 class="question questionHeader"></h3>
+
+                  <div id = "question-title"></div>
+                  <div id = "questions"></div>
+                  <div id = "choices"></div>
+
+                </div>
+              
+              
               <div class="answers"></div>
               <p class="start-button text-center animated zoomInDown">
-                <a class="btn btn-primary btn-lg startButton animated pulse infinite" href="#" role="button">
+                <a class="btn btn-primary btn-lg startButton animated pulse infinite" id="start" role="button">
                   <span class="glyphicon glyphicon-heart-empty"></span>
-                  
+
                 </a>
               </p>
             </div>
