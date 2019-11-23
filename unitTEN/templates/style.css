@@ -1,0 +1,14 @@
+header{
+    background-color: red; 
+    color: beige; 
+    font-size:45px; 
+    height: 175px; 
+    text-align: center; 
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.card{
+    max-width: 450px;
+    position: relative;
+}
