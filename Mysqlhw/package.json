@@ -1,0 +1,15 @@
+{
+  "name": "inquirer",
+  "version": "1.0.0",
+  "description": "Inquirer",
+  "main": "index.js",
+  "dependencies": {
+    "asciiart-logo": "^0.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
