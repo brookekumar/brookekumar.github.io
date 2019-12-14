@@ -1,1 +1,17 @@
-[{"title":"Test Title","text":"Test text"}]
+[
+  {
+    "title": "Hello",
+    "text": "hi hi hi hi \n",
+    "id": 0
+  },
+  {
+    "title": "Thank you",
+    "text": "Thanks for grading my hw 2 weeks late!",
+    "id": 1
+  },
+  {
+    "title": "Have a good day!",
+    "text": ":) ",
+    "id": 2
+  }
+]

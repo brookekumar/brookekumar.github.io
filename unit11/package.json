@@ -1,15 +1,23 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "note taker unit 10ish",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Brooke Kumar",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "mysql": "^2.16.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brookekumar/brookekumar.github.io/tree/master/unit10"
+  },
+  "keywords": [
+    "brookekumar"
+  ]
 }
