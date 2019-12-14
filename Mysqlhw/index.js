@@ -1,7 +1,7 @@
 const { prompt } = require("inquirer");
 const logo = require("asciiart-logo");
 // var exphbs = require("express-handlebars");
-const db = require("./index");
+const db = require("./db");
 require("console.table");
 init();
 
@@ -11,7 +11,7 @@ init();
 
 // Display logo text, load main prompts
 function init() {
-  const logoText = logo({ name: "Employee Manager" }).render();
+  const logoText = logo({ name: "C'est le team!!!!" }).render();
   console.log(logoText);
   loadMainPrompts();
 }
@@ -155,10 +155,12 @@ async function viewEmployeesByDepartment() {
 
 async function viewEmployeesByManager() {
   const managers = await db.findAllEmployees();
+  console.log(managers);
   const managerChoices = managers.map(({ id, first_name, last_name }) => ({
     name: `${first_name} ${last_name}`,
     value: id
-  }));
+  }))
+  // console.log(value, "value", id, "id"));
   const { managerId } = await prompt([
     {
       type: "list",

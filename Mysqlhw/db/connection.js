@@ -1,3 +1,4 @@
+const util = require("util");
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
@@ -17,5 +18,7 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
   if (err) throw err;
 });
+
+connection.query = util.promisify(connection.query);
 
 module.exports = connection;
